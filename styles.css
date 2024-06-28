@@ -1,0 +1,43 @@
+body {
+  background-color: #f4a261;
+  margin: 0;
+
+}
+header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  background-color: #E76F51;
+  height: 6em;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  font-size: large;
+}
+#logo{
+  display: flexbox;
+  width: 50%;
+  text-align: right;
+  color: #264653;
+}
+#navbar {
+  display: flex;
+  width: 45%;
+  flex-direction: row;
+  justify-content: right;
+  right: 5%;
+}
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#navbar ul li {
+  margin-left:10px;
+}
+#navbar ul li a {
+  text-decoration: none;
+  color: #264653;
+}
+#second{
+    background-color: #E9C46A;
+}
