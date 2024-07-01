@@ -37,9 +37,6 @@ header {
   text-decoration: none;
   color: #264653;
 }
-#second {
-  background-color: #e9c46a;
-}
 #first {
   display: flex;
   position: relative;
@@ -78,6 +75,8 @@ header {
   width: 75%;
   height: 75%;
   border-radius: 5px;
+  border: solid 6px #264653;
+  box-shadow: 0 0 3px #264653;
 }
 #first-content {
   position: relative;
@@ -88,4 +87,73 @@ header {
   width: 70%;
   left: 15%;
   height: 100%;
+}
+#second {
+  position: relative;
+  background-color: #e9c46a;
+  width: 100%;
+  height: 45em;
+}
+#second-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  left: 15%;
+  height: 100%;
+}
+#second-titulation {
+  text-align: center;
+}
+#second-title {
+  font-size: 48px;
+  font-family: "Bebas Neue";
+  margin-top: 50px;
+  margin-bottom: 5px;
+}
+#second-title-description {
+  font-size: medium;
+  font-family: "Poppins";
+  font-style: italic;
+}
+#acomps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  height: 100%;
+}
+.abd {
+  margin-top: 100px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.abox {
+  height: 200px;
+  width: 200px;
+  border: solid 6px #264653;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  align-items: center;
+box-shadow: 0 0 3px #264653;
+
+}
+.abox img {
+  width: 200px;
+  height: 200px;
+  border-radius: 1.5px;
+}
+.adesc {
+  text-align: justify;
+  font-family: "Poppins";
+  font-style: italic;
+}
+.abox:hover {
+  transform: scale(1.05);
+  transition: 0.1s;
 }
