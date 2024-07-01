@@ -84,20 +84,21 @@ header {
   font-style: italic;
 }
 #first-image {
-  width: 50%;
-  position: relative;
-  height: 100%;
-  right: 0;
-}
-#first-image img {
-  position: relative;
-  margin-top: 50px;
   margin-left: 50px;
   width: 403.2px;
   height: 300px;
   border-radius: 5px;
   border: solid 6px #264653;
   box-shadow: 0 0 3px #264653;
+  position: relative;
+  right: 0;
+}
+#first-image img {
+  position: relative;
+  width: 403.2px;
+  height: 300px;
+  border-radius: 2.5px;
+
 }
 @media screen and (max-width: 919px) {
   #first-image {
