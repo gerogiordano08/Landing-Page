@@ -43,11 +43,15 @@ header {
   height: 25em;
   align-items: center;
 }
-#first-image {
-  width: 50%;
+#first-content {
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  left: 15%;
   height: 100%;
-  right: 0;
 }
 #first-text {
   position: relative;
@@ -68,25 +72,30 @@ header {
   font-family: "Poppins";
   font-style: italic;
 }
+#first-image {
+  width: 50%;
+  position: relative;
+  height: 100%;
+  right: 0;
+}
 #first-image img {
   position: relative;
   margin-top: 50px;
   margin-left: 50px;
-  width: 75%;
-  height: 75%;
+  width: 403.2px;
+  height: 300px;
   border-radius: 5px;
   border: solid 6px #264653;
   box-shadow: 0 0 3px #264653;
 }
-#first-content {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 70%;
-  left: 15%;
-  height: 100%;
+
+@media screen and (max-width: 919px) {
+  #first-image {
+    display: none;
+  }
+  #first-text {
+    width: 100%;
+  }
 }
 #second {
   position: relative;
@@ -126,6 +135,7 @@ header {
   height: 100%;
 }
 .abd {
+  position: relative;;
   margin-top: 100px;
   align-items: center;
   display: flex;
@@ -142,7 +152,7 @@ header {
   align-items: center;
   box-shadow: 0 0 3px #264653;
 }
-.abox img {
+.abimg{
   width: 200px;
   height: 200px;
   border-radius: 1.5px;
@@ -155,6 +165,62 @@ header {
 .abox:hover {
   transform: scale(1.05);
   transition: 0.1s;
+}
+@media screen and (max-width: 1184px) {
+  #second-content {
+    width: 80%;
+    left: 10%;
+  }
+}
+@media screen and (max-width: 1044px) {
+  #second-content {
+    width: 90%;
+    left: 5%;
+  }
+}
+
+@media screen and (max-width: 926px) {
+  #second-content {
+    width: 100%;
+    left: 0;
+
+  }
+  #second {
+    width: 100%;
+    height: fit-content;
+  }
+  .abd {
+    margin-top: 30px;
+    height: 350px;
+    width: fit-content;
+  }
+  .adesc {
+    width: 70%;
+  }
+  #acomps {
+margin-bottom: 30px;
+    left: 10%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+}
+@media screen and (max-width: 693px) {
+.adesc{display: none;}
+.abd{height: 250px;}
+  
+}
+@media screen and (max-width: 550px) {
+  .abimg {
+    height: 150px;
+    width: 150px;
+  }
+  .abd{height: 175px;}
+  .abox {
+    height: 150px;
+    width: 150px;
+  }
 }
 #third {
   position: relative;
@@ -244,6 +310,8 @@ footer {
   align-items: center;
   font-size: large;
 }
-footer p{margin-left: 2.5%;
-margin-right: 2.5%;
-color: #e76f51;}
+footer p {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  color: #e76f51;
+}
