@@ -166,6 +166,7 @@ header {
   width: 200px;
   height: 200px;
   border-radius: 1.5px;
+  background-color: white;
 }
 .adesc {
   text-align: justify;
@@ -363,3 +364,4 @@ footer p {
   margin-right: 2.5%;
   color: #e76f51;
 }
+
