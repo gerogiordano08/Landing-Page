@@ -1,2 +1,2 @@
 # Landing-Page
-My first Odin Project
+My landing page, available in spanish and english.
