@@ -17,22 +17,19 @@
   <body>
     <header>
       <div id="logo">
-        <h1>Gerónimo's Landing Page</h1>
+        <h1 data-key="main_title">Gerónimo's Landing Page</h1>
       </div>
       <div id="navbar">
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Portfolio</a></li>
-          <li><a href="">Contact</a></li>
+          <li><button id="lang_changer" data-key="language">Spanish</button></li>
         </ul>
       </div>
     </header>
     <div id="first">
       <div id="first-content">
         <div id="first-text">
-          <h2 id="first-title">This is who I am</h2>
-          <span id="first-description">
+          <h2 id="first-title" data-key="first_text_header">This is who I am</h2>
+          <span id="first-description" data-key="first_text">
             Hello there! I’m <b>Gerónimo</b>, from <b>Mendoza, Argentina</b>. I’m a Computer Science student who’s eager to gain some freelance experience. I’m fluent in Spanish and English, and I’m a quick learner. I can help you with <b>web technologies</b>, <b>Python</b>, <b>Django</b>, and more. Let me know if you need any help!</span>
         </div>
         <div id="first-image">
@@ -46,8 +43,8 @@
     <div id="second">
       <div id="second-content">
         <div id="second-titulation">
-          <h1 id="second-title">Portfolio</h1>
-          <span id="second-title-description"
+          <h1 id="second-title" data-key="portfolio_header">Portfolio</h1>
+          <span id="second-title-description" data-key="portfolio_text"
             >Some of the proyects of my portfolio. Feel free to check them by clicking on the images. </span
           >
         </div>
@@ -62,7 +59,7 @@
               />
               </a>
             </div>
-            <div class="adesc">
+            <div class="adesc" data-key="portfolio_item_1_description">
               A Django webapp to record your trades.
             </div>
           </div>
@@ -76,7 +73,7 @@
               />
             </div>
           </a>
-            <div class="adesc">
+            <div class="adesc" data-key="portfolio_item_2_description">
               Stock Signal is a python app/script that lets you load a trendline and notifies you via telegram when a certain chosen stock reaches that trendline.
             </div>
           </div>
@@ -86,11 +83,11 @@
               <img
                 class="abimg"
                 src="images/bgammon.jpg"
-                alt="A GOAT"
+                alt="Backgammon"
               />
               </a>
             </div>
-            <div class="adesc">
+            <div class="adesc" data-key="portfolio_item_3_description">
               The backgammon game, designed by me as a college project.
             </div>
           </div>
@@ -100,7 +97,7 @@
     </div>
     <div id="third">
       <div id="third-content">
-        <p id="phrase">
+        <p id="phrase" data-key="phrase_text">
         I’m a learning developer who’s eager to learn and grow. I’d be thrilled if you could consider me for your next project.
       </p>
       </div>
@@ -109,9 +106,9 @@
       <div id="fourth-content">
         <div id="callbox">
           <div id="calltext">
-            <span id="calltitle"
+            <span id="calltitle" data-key="thank_you_text"
               >Thank you for taking the time to check out my landing page!</span
-            ><span id="calldesc">You can reach me at: gerogiordano08@gmail.com
+            ><span id="calldesc" data-key="thank_you_text_mail">You can reach me at: gerogiordano08@gmail.com
             </span>
           </div>
           <button id="callbutton">;)</button>
@@ -120,7 +117,8 @@
     </div>
   </body>
   <footer>
-    <p>Contact Me: gerogiordano08@gmail.com</p>
-    <p>Made with love from Mendoza</p>
+    <p data-key="contact_text">Contact Me: gerogiordano08@gmail.com</p>
+    <p data-key="footer_text">Made with love from Mendoza</p>
   </footer>
 </html>
+<script src="script.js"></script>
