@@ -2,254 +2,155 @@ body {
   background-color: #f4a261;
   margin: 0;
 }
-header {
+
+header,
+footer {
   display: flex;
   width: 100%;
-  flex-direction: row;
-  background-color: #e76f51;
-  height: 6em;
   font-family: "Poppins", sans-serif;
   align-items: center;
+  justify-content: space-between;
+}
+
+header {
+  background-color: #e76f51;
+  height: 6em;
   font-size: large;
 }
 
 #logo {
   display: flex;
   width: 50%;
-  justify-content: right;
+  justify-content: flex-end;
   color: #264653;
 }
+
 #navbar {
   display: flex;
   width: 45%;
-  flex-direction: row;
-  justify-content: right;
-  right: 5%;
+  justify-content: flex-end;
+  padding-right: 5%;
 }
+
 #navbar ul {
   display: flex;
-  flex-direction: row;
   list-style-type: none;
 }
+
 #navbar ul li {
   margin-left: 10px;
 }
-#navbar ul li a {
-  text-decoration: none;
-  color: #264653;
+
+#first,
+.portafolio,
+#third,
+#fourth {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
-@media screen and (max-width: 716px) {
-  #navbar {
-    display: none;
-  }
-  #logo {
-    width: 70%;
-    margin-left: 15%;
-    justify-content: space-around;
-  }
-}
+
 #first {
-  display: flex;
-  position: relative;
   height: 25em;
-  align-items: center;
 }
-#first-content {
+.portafolio {
+  height: 30em;
+}
+#third {
+  height: 20em;
+  background-color: #c0d6df;
+}
+#fourth {
+  height: 25em;
+  background-color: #2a9d8f;
+}
+
+#first-content,
+#third-content,
+#fourth-content {
   position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   width: 70%;
   left: 15%;
   height: 100%;
+  align-items: center;
+  justify-content: center;
 }
+
+#first-content {
+  flex-direction: row;
+}
+
 #first-text {
-  position: relative;
   width: 50%;
-  height: 100%;
-  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 #first-title {
   margin-bottom: 5px;
   font-size: 36px;
   font-family: "Bebas Neue";
 }
+
 #first-description {
   font-size: medium;
   font-family: "Poppins";
   font-style: italic;
 }
-#first-image {
-  margin-left: 50px;
-  width: 403.2px;
-  height: 300px;
+
+#first-image,
+.port-image {
   border-radius: 5px;
   border: solid 6px #264653;
   box-shadow: 0 0 3px #264653;
-  position: relative;
-  right: 0;
+  overflow: hidden;
 }
+
+#first-image,
 #first-image img {
-  position: relative;
   width: 403.2px;
   height: 300px;
+}
+.port-image,
+.port-image img {
+  width: 300px;
+  height: 300px;
+}
 
+.port-image {
+  transition: transform 0.1s;
 }
-@media screen and (max-width: 919px) {
-  #first-image {
-    display: none;
-  }
-  #first-text {
-    width: 100%;
-  }
-}
-#second {
-  position: relative;
-  background-color: #e9c46a;
-  width: 100%;
-  height: 45em;
-}
-#second-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-}
-#second-titulation {
-  text-align: center;
-}
-#second-title {
-  font-size: 48px;
-  font-family: "Bebas Neue";
-  margin-top: 50px;
-  margin-bottom: 5px;
-}
-#second-title-description {
-  font-size: medium;
-  font-family: "Poppins";
-  font-style: italic;
-}
-#acomps {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  width: 100%;
-  height: 100%;
-}
-.abd {
-  position: relative;
-  margin-top: 100px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  width: 20%;
-}
-.abox {
-  height: 200px;
-  width: 200px;
-  border: solid 6px #264653;
-  border-radius: 5px;
-  margin-bottom: 10px;
-  text-align: center;
-  align-items: center;
-  box-shadow: 0 0 3px #264653;
-}
-.abimg {
-  width: 200px;
-  height: 200px;
-  border-radius: 1.5px;
-  background-color: white;
-}
-.adesc {
-  text-align: justify;
-  font-family: "Poppins";
-  font-style: italic;
-}
-.abox:hover {
+
+.port-image:hover {
   transform: scale(1.05);
-  transition: 0.1s;
 }
-@media screen and (max-width: 1184px) {
-  #second-content {
-    width: 80%;
-    left: 10%;
-  }
-}
-@media screen and (max-width: 1044px) {
-  #second-content {
-    width: 90%;
-    left: 5%;
-  }
-}
-@media screen and (max-width: 926px) {
-  #second-content {
-    width: 100%;
-    left: 0;
-  }
-  #second {
-    width: 100%;
-    height: fit-content;
-  }
-  .abd {
-    margin-top: 30px;
-    height: 350px;
-    width: fit-content;
-  }
-  .adesc {
-    width: 70%;
-  }
-  #acomps {
-    margin-bottom: 30px;
-    left: 10%;
-    width: 80%;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-  }
-}
-@media screen and (max-width: 693px) {
-  .adesc {
-    display: none;
-  }
-  .abd {
-    height: 250px;
-  }
-}
-@media screen and (max-width: 550px) {
-  .abimg {
-    height: 150px;
-    width: 150px;
-  }
-  .abd {
-    height: 175px;
-  }
-  .abox {
-    height: 150px;
-    width: 150px;
-  }
-}
-#third {
-  position: relative;
-  width: 100%;
 
-  height: 20em;
+.image-right {
+  margin-left: 50px;
 }
-#third-content {
-  display: flex;
-  position: relative;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-  align-items: center;
+.image-left {
+  margin-right: 50px;
 }
+
+.link,
+.link:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.port1 {
+  background-color: #e9c46a;
+}
+.port2 {
+  background-color: #4f6d7a;
+}
+.port3 {
+  background-color: #fffbbd;
+}
+
 #phrase {
   background-color: rgba(247, 176, 119, 0.4);
   border-radius: 10px;
@@ -260,108 +161,140 @@ header {
   font-weight: 350;
   text-align: justify;
   width: 70%;
-  margin-left: 15%;
 }
-@media screen and (max-width: 897px) {
-  #third-content {
-    width: 100%;
-    left: 0;
-  }
-}
-@media screen and (max-width: 628px) {
-  #phrase {
-    font-size: x-large;
-  }
-}
-#fourth {
-  position: relative;
-  background-color: #2a9d8f;
-  width: 100%;
-  height: 25em;
-}
-#fourth-content {
-  position: relative;
-  width: 70%;
-  left: 15%;
-  height: 100%;
-}
+
 #callbox {
-  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  left: 10%;
-  top: 20%;
   width: 80%;
   height: 60%;
   background-color: aliceblue;
   border-radius: 10px;
+  padding: 0 5%;
 }
+
 #calltext {
-  position: relative;
   display: flex;
   flex-direction: column;
-  left: 5%;
-  width: 70%;
-  height: fit-content;
 }
 #calltitle {
   font-size: 36px;
   font-family: "Bebas Neue";
   margin-bottom: 5px;
 }
+
 #callbutton {
-  text-align: center;
-  position: relative;
-  width: 15%;
-  right: 7.5%;
   border: #264653 solid 3px;
   border-radius: 8px;
   font-family: "Poppins";
-  font-size: large;
   cursor: pointer;
+  background: transparent;
 }
-@media screen and (max-width: 699px) {
-  #calldesc {
-    display: none;
-  }
-  #calltitle {
-    text-align: center;
-  }
-}
-@media screen and (max-width: 622px) {
-  #callbox {
-    flex-direction: column;
-  }
-  #callbutton {
-    left: 0;
-    bottom: 30px;
-    width: 70%;
-  }
-  #calltitle {
-    margin-top: 10%;
-  }
-  #calltext {
-    width: 100%;
-    left: 0;
-  }
-}
-footer {
+
+.cv_div {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 30%;
+  height: 50%;
   justify-content: space-between;
-  flex-direction: row;
+}
+
+footer {
   background-color: #264653;
   height: 4em;
-  font-family: "Poppins", sans-serif;
   font-style: italic;
-  align-items: center;
   font-size: large;
 }
+
 footer p {
-  margin-left: 2.5%;
-  margin-right: 2.5%;
+  margin: 0 2.5%;
   color: #e76f51;
 }
 
+@media screen and (max-width: 1585px) {
+  #fourth-content {
+    width: 90%;
+    left: 5%;
+  }
+  #callbox {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 919px) {
+  #first-image,
+  .port-image {
+    display: none;
+  }
+  #first-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 897px) {
+  /* Devolvemos el margen lateral usando 90% de ancho y 5% de posición */
+  #first-content,
+  #third-content,
+  #fourth-content {
+    width: 90%;
+    left: 5%;
+  }
+
+  #callbox {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .cv_div {
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .cv_div .link {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .cv_div #callbutton {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 919px) {
+  #first-image,
+  .port-image {
+    display: none;
+  }
+  #first-text {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  #navbar {
+    display: none;
+  }
+  #logo {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 628px) {
+  #phrase {
+    width: 100%; /* El contenedor padre ya tiene el margen del 5% */
+    font-size: x-large;
+  }
+  #calltitle {
+    font-size: 28px;
+    text-align: center;
+  }
+  #calldesc {
+    display: none;
+  }
+}
